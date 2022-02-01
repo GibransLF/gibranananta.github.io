@@ -1,12 +1,13 @@
 * {
   margin: 0;
   padding: 0;
+  border-radius: 0;
 }
 
 body {
+  overflow-x: hidden;
   font-family: sans-serif;
   background-color: lightgrey;
-  overflow-x: hidden;
 }
 
 /* navbar */
@@ -38,11 +39,6 @@ nav ul {
   text-decoration: none;
 }
 
-nav ul li a:hover {
-  color: #ffffff;
-  text-decoration: none;
-}
-
 nav ul li a:link {
   text-decoration: none;
 }
@@ -51,6 +47,12 @@ nav ul li a:visited {
   color: #251923;
   text-decoration: none;
 }
+
+nav ul li a:hover {
+  color: #ffffff;
+  text-decoration: none;
+}
+
 /* button */
 .menu-btn {
   display: none;
@@ -141,7 +143,8 @@ nav ul li a:visited {
     font-family: "Shadows Into Light", cursive;
     list-style: none;
     text-decoration: none;
-    color: black;
+    color: #251923;
+    margin: 10px 15px;
   }
 
   .side ul li a:link {
