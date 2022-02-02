@@ -4,6 +4,10 @@
   border-radius: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   overflow-x: hidden;
   font-family: sans-serif;
@@ -11,12 +15,20 @@ body {
 }
 
 /* navbar */
-nav {
+
+nav.nav1 {
   display: flex;
+  justify-content: space-between;
+  position: fixed;
   align-items: center;
   background-color: #027ed2;
   padding: 10px 20px;
-  justify-content: space-between;
+  width: 100%;
+  margin: 0 auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: +1;
 }
 
 nav div img {
@@ -30,13 +42,14 @@ nav div h3 {
 }
 
 nav ul {
-  font-family: "Shadows Into Light", cursive;
+  font-family: "Roboto Mono", monospace;
   list-style: none;
   display: flex;
   justify-content: space-between;
   width: 40%;
   color: black;
   text-decoration: none;
+  margin-right: 30px;
 }
 
 nav ul li a:link {
@@ -62,6 +75,8 @@ nav ul li a:hover {
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  border-radius: 5px;
+  margin-right: 30px;
 }
 
 .btn-hamburger {
@@ -105,7 +120,224 @@ nav ul li a:hover {
 .side {
   display: none;
 }
+.info {
+  margin-top: 1cm;
+}
+/* profile  */
+.profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.profile img {
+  margin-left: auto;
+  margin-right: auto;
+  height: 8cm;
+  width: 8cm;
+  border-radius: 50%;
+  margin: 1.25cm;
+  outline-color: #251923;
+  outline-style: outset;
+  outline-width: 8px;
+}
 
+.profile h1 {
+  text-align: center;
+  font-size: 30px;
+  font-family: "Mochiy Pop P One", sans-serif;
+}
+
+.profile p {
+  text-align: center;
+}
+
+.link {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.link a img {
+  margin-top: 15px;
+  margin-bottom: 110px;
+  width: 50px;
+  height: 50px;
+}
+
+/* about me */
+.about__me {
+  background-color: #027ed2;
+  text-align: center;
+}
+
+.about__me .about {
+  justify-content: center;
+  align-items: center;
+}
+.about__me img {
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  width: 6cm;
+  height: 9cm;
+  border-radius: 15%;
+  outline-style: outset;
+  outline-color: #ffa801;
+  outline-width: 3px;
+}
+
+.about__me h1 {
+  margin: 3cm, 0;
+  font-size: 30px;
+  font-family: "Mochiy Pop P One", sans-serif;
+}
+
+.about__me .about {
+  text-align: center;
+  font-size: 20px;
+  margin: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.about__me p {
+  font-family: "Roboto Mono", monospace;
+}
+
+/* expertise */
+.expertise .row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.expertise .row p {
+  font-family: "Roboto Mono", monospace;
+  margin: 10px;
+}
+
+.expertise .ex {
+  margin: 20px;
+  background-color: whitesmoke;
+  transition: all 0.3s ease-in-out;
+}
+
+.expertise .ex:hover {
+  box-shadow: 4px 4px 10px #251923;
+  transition: all 0.3s ease-in-out;
+}
+
+.expertise h1 {
+  text-align: center;
+  font-size: 30px;
+  font-family: "Mochiy Pop P One", sans-serif;
+  margin-top: 20px;
+}
+
+.expertise img {
+  width: 5cm;
+  height: 5cm;
+  margin: 20px;
+}
+
+/* work */
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.work h1 {
+  text-align: center;
+  font-size: 30px;
+  font-family: "Mochiy Pop P One", sans-serif;
+  margin-top: 20px;
+}
+/* card */
+.card {
+  width: 6cm;
+  height: 10cm;
+  background-color: whitesmoke;
+  border-style: outset;
+  border-width: 1px;
+  border-radius: 20px;
+  border-color: black;
+  margin: 20px;
+  overflow: hidden;
+}
+
+.card .head {
+  width: 6cm;
+  height: 6cm;
+  background-color: #251923;
+}
+
+.card .content {
+  width: 6cm;
+  height: 4cm;
+  background-color: #ffffff;
+}
+.card .content h3 {
+  margin: 10px;
+}
+
+.card .content p {
+  margin: 10px;
+  font-family: "Roboto Mono", monospace;
+}
+
+.card .head img {
+  width: 6cm;
+  height: 6cm;
+}
+
+/* contact me */
+.contact {
+  background-color: #027ed2;
+}
+
+.contact .CM {
+  text-align: center;
+  font-size: 30px;
+  font-family: "Mochiy Pop P One", sans-serif;
+  margin-top: 20px;
+  margin-bottom: 1cm;
+}
+
+.contacts {
+  font-family: "Roboto Mono", monospace;
+  margin: 30px;
+}
+
+.contacts b {
+  font-size: 20px;
+}
+
+.foot {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  position: fixed;
+  background-color: #027ed2;
+  padding: 10px 0px;
+  width: 100%;
+  margin: 0 auto;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: +1;
+  box-shadow: 20px 20px 10px #251923;
+}
+
+.foot img {
+  width: 16px;
+  height: 16px;
+}
 /* Responsive */
 /* tablet */
 @media screen and (max-width: 768px) {
@@ -127,13 +359,15 @@ nav ul li a:hover {
     display: flex;
     height: 100vh;
     width: 40%;
-    background-color: #ffa801;
+    background-color: #0b70b3;
     transform: translateX(100%);
     transition: all 0.3s ease-in-out;
     margin: 10px, 10px;
+    margin-top: 1.2cm;
   }
 
   .side.bar {
+    position: fixed;
     display: flex;
     transform: translateX(0);
     transition: all 0.3s ease-in-out;
@@ -157,6 +391,32 @@ nav ul li a:hover {
   .side ul li a {
     color: #251923;
   }
-}
 
+  /* profile */
+  .profile img {
+    width: 5cm;
+    height: 5cm;
+    outline-width: 5px;
+  }
+
+  .profile h1 {
+    font-size: 20px;
+  }
+
+  .link a img {
+    margin-top: 15px;
+    margin-bottom: 110px;
+    width: 35px;
+    height: 35px;
+  }
+
+  /* contact */
+  .contacts h1 {
+    font-size: 20px;
+  }
+
+  .contacts b {
+    font-size: 14px;
+  }
+}
 /* end responsive */

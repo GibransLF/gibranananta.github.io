@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0;" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0" />
 
     <link rel="stylesheet" href="style.css" />
     <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&family=Pacifico&display=swap" rel="stylesheet" />
@@ -11,7 +11,8 @@
     <title>Portfolio: Ananta</title>
   </head>
   <body>
-    <nav>
+    <!-- navbar -->
+    <nav class="nav1">
       <div class="logo">
         <h3>
           <img src="photo/logo.png" alt="Logo" />
@@ -19,32 +20,175 @@
         </h3>
       </div>
       <ul>
-        <li><a href="">Profile</a></li>
-        <li><a href="">About</a></li>
-        <li><a href="">Skill</a></li>
-        <li><a href="">Services</a></li>
-        <li><a href="">Work</a></li>
-        <li><a href="">Contact me</a></li>
+        <li><a href="#profile">Profile</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skill">Skill</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#contact">Contact me</a></li>
       </ul>
       <div class="menu-btn">
         <div class="btn-hamburger"></div>
       </div>
     </nav>
+    <!-- end navbar -->
+    <!-- sidebar mobile -->
     <div class="side">
       <ul>
-        <li>
-          <a href="">Profile</a>
-        </li>
-        <li><a href="">About</a></li>
-        <li><a href="">Skill</a></li>
-        <li><a href="">Services</a></li>
-        <li><a href="">Work</a></li>
-        <li><a href="">Contact me</a></li>
+        <li><a href="#profile">Profile</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skill">Skill</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#contact">Contact me</a></li>
       </ul>
     </div>
+    <!-- end sidebar mobile -->
+    <!-- profile -->
+    <section class="profile" id="profile">
+      <div class="info">
+        <img src="photo/profile.jpg" alt="Photo Gibran Alfi Ananta" />
+        <h1>GIBRAN ALFI ANANTA</h1>
+        <p>software engineering, Photoshop editing, Video Editing.</p>
+      </div>
+    </section>
+    <nav class="miniphoto">
+      <div class="link">
+        <a href="https://web.facebook.com/gibran.ananta.7/" target="_blank"><img src="photo/facebook.png" alt="linked to facebook" /></a>
+        <a href="https://www.instagram.com/gibrans_lf_46/" target="_blank"><img src="photo/Instagram.png" alt="Linked to Instagram" /></a>
+        <a href="https://github.com/GibransLF" target="_blank"><img src="photo/github.png" alt="Linked to Github" /></a>
+      </div>
+    </nav>
+    <!-- end profile -->
 
-    s
+    <!-- about me -->
+    <nav class="about__me" id="about">
+      &nbsp;
+      <h1>About Me</h1>
+      <div class="about">
+        <p>Yo! i'm Ananta, a freelancer, video editing, photoshop editing,and software engineering, i like movie and music too, i'am from Cianjur. :D</p>
+        <img src="photo/pasPhoto.jpg" alt="PasPhoto Gibran Alfi Ananta" />
+        <p>I am a freelancer, I can create a website, create a poster with photoshop, and also video editing because I am interested in editing a videos, if you want to ask, please scroll to the bottom. :)</p>
+      </div>
+      &nbsp;
+    </nav>
+    <!-- end about me -->
 
+    <!-- expertise -->
+    <nav class="expertise" id="skill">
+      <h1>My Expertise</h1>
+      <div class="row">
+        <div class="ex">
+          <img src="photo/cpp.png" alt="HTML logo" />
+          <h3>C++</h3>
+          <p>2 years experience</p>
+        </div>
+        <div class="ex">
+          <img src="photo/html.png" alt="HTML logo" />
+          <h3>HTML</h3>
+          <p>2 years experience</p>
+        </div>
+        <div class="ex">
+          <img src="photo/css.png" alt="" />
+          <h3>CSS</h3>
+          <p>2 years experience</p>
+        </div>
+        <div class="ex">
+          <img src="photo/js.png" alt="" />
+          <h3>JavaScript</h3>
+          <p>6 month experience</p>
+        </div>
+        <div class="ex">
+          <img src="photo/bs.png" alt="" />
+          <h3>Bootstrap</h3>
+          <p>2 years experience</p>
+        </div>
+        <div class="ex">
+          <img src="photo/laravel.png" alt="" />
+          <h3>laravel</h3>
+          <p>1 years experience</p>
+        </div>
+        <div class="ex">
+          <img src="photo/csharp.png" alt="" />
+          <h3>C#</h3>
+          <p>1 years experience</p>
+        </div>
+        <div class="ex">
+          <img src="photo/mysql.png" alt="" />
+          <h3>MySQL</h3>
+          <p>2 years experience</p>
+        </div>
+        <div class="ex">
+          <img src="photo/Photoshop.png" alt="" />
+          <h3>Photoshop</h3>
+          <p>2 years experience</p>
+        </div>
+        <div class="ex">
+          <img src="photo/filmora.png" alt="" />
+          <h3>Filmora</h3>
+          <p>4 month experience</p>
+        </div>
+        <div class="ex">
+          <img src="photo/ap.png" alt="" />
+          <h3>Premiere</h3>
+          <p>4 month experience</p>
+        </div>
+      </div>
+    </nav>
+    <!-- end expertise -->
+
+    <!-- work -->
+    <nav class="work" id="work">
+      <h1>My Work</h1>
+      <div class="cards">
+        <div class="card">
+          <div class="head">
+            <img src="photo/kohi.jpg" alt="gambar" />
+          </div>
+          <div class="content">
+            <h3>Coffe</h3>
+            <p>coffe pixel art.</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="head">
+            <img src="photo/reseller.jpg" alt="gambar" />
+          </div>
+          <div class="content">
+            <h3>Poster</h3>
+            <p>Penjualan Steam Wallet agar pembeli mudah memahami harga dan pemilihan pembayaran.</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="head">
+            <img src="photo/wp.jpg" alt="gambar" />
+          </div>
+          <div class="content">
+            <h3>Wallpaper</h3>
+            <p>sebagian karakter Monika dan sebagian adalah Nakiri Ayame.</p>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- end work -->
+    <!-- contact me -->
+    <nav class="contact" id="contact">
+      <h1 class="CM">Contact Me</h1>
+      <div class="contacts">
+        <div>
+          <h1>WA/HP</h1>
+          <b>&nbsp;&nbsp; 0895 - 3765 - 43382</b>
+        </div>
+        <div>
+          <h1>Gmail</h1>
+          <b>&nbsp;&nbsp; gibranalfi2003@gmail.com</b>
+        </div>
+      </div>
+    </nav>
+    <!-- end contact me -->
+    <!-- footer -->
+    <footer class="foot">
+      <img src="photo/logo.png" alt="" />
+      <h6>&nbsp;© Copyright All Right Reserved 2022</h6>
+    </footer>
     <script src="main.js"></script>
   </body>
 </html>
