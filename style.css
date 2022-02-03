@@ -130,8 +130,6 @@ nav ul li a:hover {
   align-items: center;
 }
 .profile img {
-  margin-left: auto;
-  margin-right: auto;
   height: 8cm;
   width: 8cm;
   border-radius: 50%;
@@ -374,11 +372,15 @@ nav ul li a:hover {
   }
 
   .side ul {
-    font-family: "Shadows Into Light", cursive;
+    font-family: "Roboto Mono", monospace;
     list-style: none;
     text-decoration: none;
     color: #251923;
     margin: 10px 15px;
+  }
+
+  .side ul li {
+    margin: 10px 0;
   }
 
   .side ul li a:link {
